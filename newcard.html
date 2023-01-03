@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>cardWeb</title>
+</head>
+<style>
+    .cardList img {
+        width: 200px;
+        display: inline-block;
+        margin: 40px;
+    }
+</style>
+
+<body>
+    <header>
+        <nav class="menu" data-visible="true">
+            <ul>
+                <li><a href="#"> <img src="user.svg" width="20px">我的牌組</a></li>
+                <li><a href="#"> <img src="champion.svg" width="20px">推薦牌組</a></li>
+                <li>
+                    <a class="gamelogo" href="index.html"> <img src="lor.svg">
+                        符文大地傳說<span class="fa-solid fa-chevron-down first"></span>
+                    </a>
+                    <ul class="gamelogo-show" data-visible="false">
+                        <li>
+                            <img src="lor.svg">
+                            <a href="index.html">符文大地傳說</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#">new card</a></li>
+                <li><a href="#">wiki</a></li>
+                <li><a href="#">office</a></li>
+            </ul>
+        </nav>
+        <div class="container">
+            <div class="btn">
+                <span class="fa-stack">
+                    <i class="fa-solid fa-square fa-stack-2x" style="color:white"></i>
+                    <i class="fa-solid fa-bars fa-stack-1x" style="color:black"></i>
+                </span>
+            </div>
+            <div class="logo">
+                <ul>
+                    <li>
+                        <img src="lor.png">
+                        <a href="index.html">符文大地傳說
+                            <span class="fa-solid fa-chevron-down second"></span>
+                        </a>
+                        <ul>
+                            <li>
+                                <img src="lor.png">
+                                <a href="index.html">符文大地傳說</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <li class="searchBox">
+                <input type="search" placeholder="Search card...">
+                <label class="icon">
+                    <span class="fas fa-search"></span>
+                </label>
+            </li>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#">new card</a></li>
+                    <li><a href="https://leagueoflegends.fandom.com/wiki/Legends_of_Runeterra">wiki</a></li>
+                    <li><a href="https://playruneterra.com/zh-tw/">office</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="background-image"></div>
+    <div class="cardList">
+        <img src="http://dd.b.pvp.net/1_0_0/set1/zh_tw/img/cards/01FR009.png">
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

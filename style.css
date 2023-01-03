@@ -1,0 +1,419 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62%;
+}
+
+header {
+    width: 100%;
+    background-color: #2E2E31;
+    z-index: 9998;
+    position: relative;
+}
+
+.background-image {
+    z-index: -100;
+    position: absolute;
+    width: 1900px;
+    height: 1060px;
+    background: linear-gradient(180deg, #292F4B 0%, rgba(165, 179, 255, 0) 100%), url("background.png");
+}
+
+.container {
+    z-index: 9999;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /*navbar裡面是表格的 前面的點都去掉*/
+    list-style: none;
+    position: sticky;
+}
+
+.btn {
+    position: relative;
+    right: 0%;
+    font-size: 20px;
+    align-items: center;
+    cursor: pointer;
+    transition: left 0.5s ease;
+}
+
+.btn.open {
+    right: 10%;
+}
+
+.btn span {
+    right: 1%;
+}
+
+.logo li {
+    display: flex;
+    /* 水平置中 */
+    justify-content: center;
+    /* 垂直置中 */
+    align-content: center;
+}
+
+.logo li img {
+    width: 5rem;
+}
+
+.logo li a {
+    /*超連結底線none*/
+    text-decoration: none;
+    font-size: 3rem;
+    color: #ffffff;
+    text-align: center;
+    font-weight: 600;
+}
+
+.logo ul ul {
+    position: static;
+    display: none;
+}
+
+.logo ul a span {
+    top: 50%;
+}
+
+.menu {
+    list-style: none;
+    display: block;
+    font-size: 40px;
+    user-select: none;
+    color: white;
+    box-sizing: border-box;
+    margin: 7rem 0 0 0;
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    left: -250px;
+    background: #403F43;
+    z-index: -1;
+    transition: left 0.5s ease;
+}
+
+.menu[data-visible="true"] {
+    left: 0px;
+}
+
+.menu img {
+    width: 2rem;
+    margin: 0 10px 0 5px;
+}
+
+/*遊戲的logo有點問題 特別手動調整*/
+.gamelogo img {
+    width: 5rem;
+    /*手動調整logo定位*/
+    margin: 0 -6px -5px -8px;
+    padding-left: 2px;
+}
+
+/*遊戲的logo有點問題 特別手動調整*/
+.gamelogo-show img {
+    width: 4rem;
+    /*手動調整logo定位*/
+    margin: 0 0 0 50px;
+}
+
+.gamelogo-show[data-visible="true"] {
+    display: block;
+}
+
+.nav-toggle {
+    font-size: 3rem;
+    color: #ffffff;
+    z-index: 10;
+    position: absolute;
+    right: 10vw;
+    top: 2rem;
+    display: inline-block;
+}
+
+.menu ul {
+    height: 100%;
+    width: 100%;
+}
+
+.menu ul li {
+    line-height: 60px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.menu ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding-left: 20px;
+    font-weight: 500;
+    display: block;
+    width: 100%;
+    border-right: 3px solid transparent;
+}
+
+.menu ul li a:hover {
+    color: #E7B78A;
+    background: #585759;
+    border-right-color: #E7B78A;
+}
+
+.menu ul ul {
+    position: static;
+    display: none;
+}
+
+.menu ul ul li {
+    line-height: 42px;
+    border-bottom: none;
+}
+
+.menu ul ul li a {
+    font-size: 17px;
+    color: #e6e6e6;
+    padding-left: 80px;
+}
+
+.menu ul li ul li a {
+    font-size: 15px;
+    color: #e6e6e6;
+    margin-top: -40px;
+}
+
+.menu ul li a span {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 22px;
+}
+
+.menu ul li a:hover span {
+    background: #585759;
+    transform: translateY(-50%);
+    border-right-color: #E7B78A;
+}
+
+.menu li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 600;
+    display: inline-block;
+    width: 100%;
+    position: relative;
+}
+
+.menu li a:hover {
+    color: #E7B78A;
+    background: #585759;
+    border-right-color: #E7B78A;
+}
+
+.menu li a::after {
+    content: "";
+    width: 0%;
+    height: 3px;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: all 0.4s ease;
+}
+
+.menu li a:hover::after {
+    width: 100%;
+}
+
+nav ul .gamelogo-show .show {
+    display: block;
+}
+
+.navbar {
+    display: flex;
+    padding: 2.5rem;
+    /*間隔*/
+    gap: 3rem;
+}
+
+.navbar ul {
+    list-style: none;
+    background-color: #e6e6e6;
+    margin-bottom: -1rem;
+}
+
+.navbar li {
+    float: left;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: #000000;
+    font-weight: 600;
+    display: inline-block;
+    width: 100%;
+    position: relative;
+}
+
+.navbar ul li a:hover {
+    color: #ffffff;
+}
+
+.navbar ul li:hover {
+    background: #585759;
+}
+
+.navbar ul li::after {
+    content: "";
+    width: 0%;
+    height: 3px;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: all 0.4s ease;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+}
+
+.searchBox {
+    height: 40px;
+    width: 300px;
+    display: flex;
+    background: #f2f2f2;
+    border-radius: 5px;
+}
+
+.searchBox input {
+    height: 100%;
+    width: 300px;
+    border: none;
+    outline: none;
+    padding: 0 10px;
+    color: #000000;
+    font-size: 16px;
+    border-radius: 5px 0 0 5px;
+}
+
+.searchBox .icon {
+    height: 100%;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid #222222;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.searchBox .icon span {
+    color: #222222;
+    font-size: 18px;
+}
+
+.cardList {
+    margin-left: 280px;
+}
+
+/*卡片相關*/
+.card {
+    width: 200px;
+    display: inline-block;
+    box-shadow: 2px 2px 20px black;
+    margin: 40px;
+    border-radius: 5%;
+    background-color: #531717;
+    font-family: arial;
+}
+
+.cardimage img {
+    width: 100%;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    -webkit-mask-image: linear-gradient(180deg, #531717 0%, rgba(150, 139, 139, 0) 100%);
+    mask-image: linear-gradient(180deg, #531717 0%, rgba(150, 139, 139, 0) 100%);
+}
+
+.deckname {
+    padding: 32px;
+    text-align: center;
+    padding-top: 10px;
+    color: white;
+    font-size: 20px;
+}
+
+.maincard ul {
+    list-style: none;
+    display: flex;
+    padding: 0 40px 0 40px;
+    gap: 8px;
+}
+
+.maincard ul li img {
+    width: 90%;
+    background-color: red;
+}
+
+.maincard ul li {
+    -webkit-mask-size: 90%;
+    mask-size: 90%;
+    -webkit-mask-image: url(mask.png);
+    mask-image: url(mask.png);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+}
+
+@media(max-width: 1024px) {
+    html {
+        font-size: 52%;
+    }
+}
+
+@media(max-width: 769px) {
+    header {
+        width: 100%;
+    }
+
+    html {
+        font-size: 42%;
+    }
+}
+
+@media (max-width: 560px) {
+    html {
+        font-size: 42%;
+    }
+
+    .container {
+        display: block;
+        padding: 1rem;
+    }
+
+    /*內縮的程式碼*/
+    .navbar {
+        position: fixed;
+        inset: 0;
+        background-color: #1d1c1c;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 15vh;
+        transform: translateX(100%);
+        transition: all 0.7s ease;
+    }
+
+    .logo {
+        margin-left: 2rem;
+        z-index: 10;
+        position: relative;
+    }
+
+    .navbar[data-visible="true"] {
+        transform: translateX(0%);
+    }
+}
