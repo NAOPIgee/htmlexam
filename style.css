@@ -17,14 +17,14 @@ header {
 
 .background-image {
     z-index: -100;
-    position: absolute;
+    position: sticky;
     width: 1900px;
     height: 1060px;
     background: linear-gradient(180deg, #292F4B 0%, rgba(165, 179, 255, 0) 100%), url("background.png");
 }
 
 .container {
-    z-index: 9999;
+
     width: 90%;
     margin: auto;
     display: flex;
@@ -33,6 +33,8 @@ header {
     /*navbar裡面是表格的 前面的點都去掉*/
     list-style: none;
     position: sticky;
+    top: 0;
+    z-index: 9999;
 }
 
 .btn {
@@ -369,13 +371,14 @@ nav ul .gamelogo-show .show {
     mask-repeat: no-repeat;
 }
 
+
 @media(max-width: 1024px) {
     html {
         font-size: 52%;
     }
 }
 
-@media(max-width: 769px) {
+@media(max-width: 890px) {
     header {
         width: 100%;
     }
@@ -383,9 +386,13 @@ nav ul .gamelogo-show .show {
     html {
         font-size: 42%;
     }
+
+    .navbar {
+        display: none;
+    }
 }
 
-@media (max-width: 560px) {
+@media (max-width: 585px) {
     html {
         font-size: 42%;
     }
@@ -395,25 +402,17 @@ nav ul .gamelogo-show .show {
         padding: 1rem;
     }
 
-    /*內縮的程式碼*/
     .navbar {
-        position: fixed;
-        inset: 0;
-        background-color: #1d1c1c;
-        flex-direction: column;
-        align-items: center;
-        padding-top: 15vh;
-        transform: translateX(100%);
-        transition: all 0.7s ease;
+        display: none;
     }
 
     .logo {
-        margin-left: 2rem;
-        z-index: 10;
-        position: relative;
+        display: none;
     }
 
-    .navbar[data-visible="true"] {
-        transform: translateX(0%);
+    .searchBox {
+        position: absolute;
+        left: 50px;
+        top: 5px;
     }
 }
