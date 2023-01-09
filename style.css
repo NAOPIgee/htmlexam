@@ -17,42 +17,35 @@ header {
 
 .background-image {
     z-index: -100;
-    position: sticky;
+    position: fixed;
     width: 1900px;
     height: 1060px;
     background: linear-gradient(180deg, #292F4B 0%, rgba(165, 179, 255, 0) 100%), url("background.png");
 }
 
 .container {
-
-    width: 90%;
+    width: 100%;
     margin: auto;
     display: flex;
     align-items: center;
     justify-content: space-around;
     /*navbar裡面是表格的 前面的點都去掉*/
     list-style: none;
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 9999;
+    background-color: #2E2E31;
 }
 
 .btn {
     position: relative;
-    right: 0%;
+    left: 40px;
     font-size: 20px;
     align-items: center;
     cursor: pointer;
     transition: left 0.5s ease;
 }
 
-.btn.open {
-    right: 10%;
-}
-
-.btn span {
-    right: 1%;
-}
 
 .logo li {
     display: flex;
@@ -291,6 +284,7 @@ nav ul .gamelogo-show .show {
     display: flex;
     background: #f2f2f2;
     border-radius: 5px;
+    margin-left:  100px;
 }
 
 .searchBox input {
@@ -320,6 +314,7 @@ nav ul .gamelogo-show .show {
 }
 
 .cardList {
+    padding-top: 100px;
     margin-left: 280px;
 }
 
@@ -371,6 +366,21 @@ nav ul .gamelogo-show .show {
     mask-repeat: no-repeat;
 }
 
+.newcard {
+    display: none;
+}
+
+.wiki {
+    display: none;
+}
+
+.office {
+    display: none;
+}
+
+.logoList {
+    display: none;
+}
 
 @media(max-width: 1024px) {
     html {
@@ -389,6 +399,18 @@ nav ul .gamelogo-show .show {
 
     .navbar {
         display: none;
+    }
+
+    .newcard {
+        display: block;
+    }
+
+    .wiki {
+        display: block;
+    }
+
+    .office {
+        display: block;
     }
 }
 
@@ -414,5 +436,9 @@ nav ul .gamelogo-show .show {
         position: absolute;
         left: 50px;
         top: 5px;
+    }
+
+    .logoList {
+        display: block;
     }
 }

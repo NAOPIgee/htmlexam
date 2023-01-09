@@ -5,31 +5,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Document</title>
 </head>
 <script>
-    var mydeck = JSON.parse("json/myDeck.json"[1]);
-    const btn = document.querySelector('.button');
+    let http = new XMLHttpRequest();
 
-    const { DeckEncoder } = require('runeterra');
+    http.open('get', './json/myDeck.json', true);
 
+    http.send();
 
+    http.onload = function () {
+        if (this.readyState == 4 && this.status == 200) {
+            let decks = JSON.parse(this.responseText);
+            let output = "";
 
-    btn.addEventListener("click", () => {
-        for (i = 0; i < 12; i++) {
-              const deck = DeckEncoder.decode(myDeck[i].code);
-              deck.code;
-              deck.count;
-              deck.set;
-              deck.id;
-              deck.faction;
-              console.log(deck);
-          }
-    })
+            for (let deck of decks) {
+
+                output += `
+            <div class="decktest">
+                <p class="code">${deck.code}</p>
+                <p class="deckName">${deck.deckName}</p>
+            </div>
+            `;
+            }
+            document.querySelector(".decks").innerHTML = output;
+        }
+    }
+
 </script>
 
 <body>
-    <button type="button">Click Me!</button>
+    <div class="decks"></div>
 </body>
 
 </html>
