@@ -325,7 +325,6 @@ nav ul .gamelogo-show .show {
     box-shadow: 2px 2px 20px black;
     margin: 40px;
     border-radius: 5%;
-    background-color: #531717;
     font-family: arial;
 }
 
@@ -333,8 +332,8 @@ nav ul .gamelogo-show .show {
     width: 100%;
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
-    -webkit-mask-image: linear-gradient(180deg, #531717 0%, rgba(150, 139, 139, 0) 100%);
-    mask-image: linear-gradient(180deg, #531717 0%, rgba(150, 139, 139, 0) 100%);
+    -webkit-mask-image: linear-gradient(180deg, #531717 40%, rgba(150, 139, 139, 0) 100%);
+    mask-image: linear-gradient(180deg, #531717 40%, rgba(150, 139, 139, 0) 100%);
 }
 
 .deckname {
