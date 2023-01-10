@@ -9,6 +9,7 @@
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="card.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="import" href="./node_modules/runeterra">
 
@@ -19,16 +20,16 @@
     <header>
         <nav class="menu" data-visible="true">
             <ul>
-                <li><a href="#"> <img src="user.svg" width="20px">我的牌組</a></li>
-                <li><a href="#"> <img src="champion.svg" width="20px">推薦牌組</a></li>
+                <li><a href="index.html"> <img src="user.svg" width="20px">我的牌組</a></li>
+                <li><a href="index.html"> <img src="champion.svg" width="20px">推薦牌組</a></li>
                 <li class="logoList">
-                    <a class="gamelogo" href="#"> <img src="lor.svg">
+                    <a class="gamelogo" href="index.html"> <img src="lor.svg">
                         符文大地傳說<span class="fa-solid fa-chevron-down first"></span>
                     </a>
                     <ul class="gamelogo-show" data-visible="false">
                         <li>
                             <img src="lor.svg">
-                            <a href="#">符文大地傳說</a>
+                            <a href="index.html">符文大地傳說</a>
                         </li>
                     </ul>
                 </li>
@@ -47,7 +48,7 @@
             <div class="logo">
                 <ul>
                     <li>
-                        <a class="gamelogo" href="#"> <img src="lor.png">
+                        <a class="gamelogo" href="index.html"> <img src="lor.png">
                             符文大地傳說
                         </a>
                     </li>
@@ -69,6 +70,130 @@
         </div>
     </header>
     <div class="background-image"></div>
+    <ul class="slides" style="left:200px;top:200px;">
+        <input type="radio" id="control-1" name="control" checked>
+        <input type="radio" id="control-2" name="control">
+        <input type="radio" id="control-3" name="control">
+        <input type="radio" id="control-4" name="control">
+        <input type="radio" id="control-5" name="control">
+        <input type="radio" id="control-6" name="control">
+        <input type="radio" id="control-7" name="control">
+        <input type="radio" id="control-8" name="control">
+        <input type="radio" id="control-9" name="control">
+
+        <!--  Left/Right Button  -->
+        <div class="navigator slide-1">
+            <label for="control-8">
+                <i class="fas fa-chevron-left"></i>
+            </label>
+            <label for="control-2">
+                <i class="fas fa-chevron-right"></i>
+            </label>
+        </div>
+
+        <div class="navigator slide-2">
+            <label for="control-1">
+                <i class="fas fa-chevron-left"></i>
+            </label>
+            <label for="control-3">
+                <i class="fas fa-chevron-right"></i>
+            </label>
+        </div>
+
+        <div class="navigator slide-3">
+            <label for="control-2">
+                <i class="fas fa-chevron-left"></i>
+            </label>
+            <label for="control-4">
+                <i class="fas fa-chevron-right"></i>
+            </label>
+        </div>
+        <div class="navigator slide-4">
+            <label for="control-3">
+                <i class="fas fa-chevron-left"></i>
+            </label>
+            <label for="control-5">
+                <i class="fas fa-chevron-right"></i>
+            </label>
+        </div>
+
+        <div class="navigator slide-5">
+            <label for="control-4">
+                <i class="fas fa-chevron-left"></i>
+            </label>
+            <label for="control-6">
+                <i class="fas fa-chevron-right"></i>
+            </label>
+        </div>
+
+        <div class="navigator slide-6">
+            <label for="control-5">
+                <i class="fas fa-chevron-left"></i>
+            </label>
+            <label for="control-7">
+                <i class="fas fa-chevron-right"></i>
+            </label>
+        </div>
+        <div class="navigator slide-7">
+            <label for="control-6">
+                <i class="fas fa-chevron-left"></i>
+            </label>
+            <label for="control-8">
+                <i class="fas fa-chevron-right"></i>
+            </label>
+        </div>
+
+        <div class="navigator slide-8">
+            <label for="control-7">
+                <i class="fas fa-chevron-left"></i>
+            </label>
+            <label for="control-1">
+                <i class="fas fa-chevron-right"></i>
+            </label>
+        </div>
+        <!--  /Left/Right Button  -->
+
+        <li class="slide"><img src="http://dd.b.pvp.net/3_21_0/set6cde/zh_tw/img/cards/06RU005.png"></li>
+        <li class="slide"><img src="http://dd.b.pvp.net/3_21_0/set6cde/zh_tw/img/cards/06RU005T1.png"></li>
+        <li class="slide"><img src="http://dd.b.pvp.net/3_21_0/set6cde/zh_tw/img/cards/06RU005T2.png"></li>
+        <li class="slide"><img src="http://dd.b.pvp.net/3_21_0/set6cde/zh_tw/img/cards/06RU005T3.png"></li>
+        <li class="slide"><img src="http://dd.b.pvp.net/3_21_0/set6cde/zh_tw/img/cards/06RU005T4.png"></li>
+        <li class="slide"><img src="http://dd.b.pvp.net/3_21_0/set6cde/zh_tw/img/cards/06RU005T6.png"></li>
+        <li class="slide"><img src="http://dd.b.pvp.net/3_21_0/set6cde/zh_tw/img/cards/06RU005T8.png"></li>
+        <li class="slide"><img src="http://dd.b.pvp.net/3_21_0/set6cde/zh_tw/img/cards/06RU005T10.png"></li>
+        <li class="slide"><img src="http://dd.b.pvp.net/3_21_0/set6cde/zh_tw/img/cards/06RU005T11.png"></li>
+
+        <div class="controls-visible">
+            <label for="control-1"></label>
+            <label for="control-2"></label>
+            <label for="control-3"></label>
+            <label for="control-4"></label>
+            <label for="control-5"></label>
+            <label for="control-6"></label>
+            <label for="control-7"></label>
+            <label for="control-8"></label>
+        </div>
+    </ul>
+
+    <ul class="detail">
+        <ul>
+            <li><img src="./icon/region/RU.png">
+                <p>起源</p>
+            </li>
+            <li><img src="./icon/type/champion.png">
+                <p>champion</p>
+            </li>
+            <li><img src="./icon/quality/champion.svg">
+                <p>champion</p>
+            </li>
+        </ul>
+        <hr size="5px" color="black" style="background-color: black;">
+        <li>
+            <p style="margin:10px;margin-top:30px;font-size: 20px;">
+                當另一具屍體倒下時，慨影樂得大笑，他知道自己很快就會解放第二把冥血武器。在其體內，勒哈斯特已經迫不及待，他知道慨影的末日終於到來了。
+            </p>
+        </li>
+    </ul>
     <script src="script.js"></script>
 </body>
 
