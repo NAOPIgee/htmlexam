@@ -9,6 +9,7 @@
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="deckStyle.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <title>cardWeb</title>
 </head>
@@ -17,22 +18,22 @@
     <header>
         <nav class="menu" data-visible="true">
             <ul>
-                <li><a href="#"> <img src="user.svg" width="20px">我的牌組</a></li>
-                <li><a href="#"> <img src="champion.svg" width="20px">推薦牌組</a></li>
-                <li>
-                    <a class="gamelogo" href="#"> <img src="lor.svg">
+                <li><a href="index.html"> <img src="user.svg" width="20px">我的牌組</a></li>
+                <li><a href="index.html"> <img src="champion.svg" width="20px">推薦牌組</a></li>
+                <li class="logoList">
+                    <a class="gamelogo" href="index.html"> <img src="lor.svg">
                         符文大地傳說<span class="fa-solid fa-chevron-down first"></span>
                     </a>
                     <ul class="gamelogo-show" data-visible="false">
                         <li>
                             <img src="lor.svg">
-                            <a href="#">符文大地傳說</a>
+                            <a href="index.html">符文大地傳說</a>
                         </li>
                     </ul>
                 </li>
-                <li><a href="newcard.html">new card</a></li>
-                <li><a href="#">wiki</a></li>
-                <li><a href="#">office</a></li>
+                <li class="newcard"><a href="newcard.html">new card</a></li>
+                <li class="wiki"><a href="https://leagueoflegends.fandom.com/wiki/Legends_of_Runeterra">wiki</a></li>
+                <li class="office"><a href="https://playruneterra.com/zh-tw/">office</a></li>
             </ul>
         </nav>
         <div class="container">
@@ -45,7 +46,7 @@
             <div class="logo">
                 <ul>
                     <li>
-                        <a class="gamelogo" href="#"> <img src="lor.png">
+                        <a class="gamelogo" href="index.html"> <img src="lor.png">
                             符文大地傳說
                         </a>
                     </li>
@@ -67,7 +68,179 @@
         </div>
     </header>
     <div class="background-image"></div>
-        
+    <div class="allOfCard">
+        <div class="champion">
+            <ul>
+                <li class="type"><img src="./champion.png"></li>
+                <li class="championImg"><img src="http://dd.b.pvp.net/3_21_0/set6cde/zh_tw/img/cards/06RU005.png"> <span
+                        class="cardAmount">X3</span>
+                </li>
+                <li class="championImg"><img src="http://dd.b.pvp.net/3_21_0/set6cde/zh_tw/img/cards/06RU026.png"> <span
+                        class="cardAmount">X3</span>
+                </li>
+            </ul>
+        </div>
+        <div class="deckCard">
+            <ul>
+                <li class="type"><img src="./equipments.png"></li>
+                <li>
+                    <div class="card_full_detial">
+                        <div class="cardDetial" style="background-color:#E5A131">
+                            <img class="mana" src="mana/mana1.png">
+                            <p>冥血骨鋸</p> <img class="cardImage_o"
+                                src="http://dd.b.pvp.net/3_21_0/set6cde/zh_tw/img/cards/06SH004-full.png">
+                        </div>
+                        <span class="cardAmount">X2</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="card_full_detial">
+                        <div class="cardDetial" style="background-color:#5AB8DA">
+                            <img class="mana" src="mana/mana2.png">
+                            <p>冥血戰矛</p> <img class="cardImage_o"
+                                src="http://dd.b.pvp.net/3_21_0/set6cde/zh_tw/img/cards/06FR018T3-full.png">
+                        </div>
+                        <span class="cardAmount">X2</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="card_full_detial">
+                        <div class="cardDetial" style="background-color:#BFB083">
+                            <img class="mana" src="mana/mana2.png">
+                            <p>冥血之盾</p> <img class="cardImage_o"
+                                src="http://dd.b.pvp.net/3_21_0/set6cde/zh_tw/img/cards/06DE011-full.png">
+                        </div>
+                        <span class="cardAmount">X2</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="card_full_detial">
+                        <div class="cardDetial" style="background-color:#E29F76">
+                            <img class="mana" src="mana/mana2.png">
+                            <p>冥血豎琴</p> <img class="cardImage_o"
+                                src="http://dd.b.pvp.net/3_21_0/set6cde/zh_tw/img/cards/06PZ008-full.png">
+                        </div>
+                        <span class="cardAmount">X3</span>
+                    </div>
+                </li>
+            </ul>
+            <ul>
+                <li class="type"><img src="./followers.png"></li>
+                <li>
+                    <div class="card_full_detial">
+                        <div class="cardDetial" style="background-color:#B4563A">
+                            <img class="mana" src="mana/mana1.png">
+                            <p>布爾魯邪教徒</p> <img class="cardImage"
+                                src="http://dd.b.pvp.net/3_21_0/set6cde/zh_tw/img/cards/06BW026-full.png">
+                        </div>
+                        <span class="cardAmount">X2</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="card_full_detial">
+                        <div class="cardDetial" style="background-color:#E5A131">
+                            <img class="mana" src="mana/mana1.png">
+                            <p>見棄巴凱</p> <img class="cardImage"
+                                src="http://dd.b.pvp.net/3_21_0/set6cde/zh_tw/img/cards/06SH005-full.png">
+                        </div>
+                        <span class="cardAmount">X3</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="card_full_detial">
+                        <div class="cardDetial" style="background-color:#3B7D6F">
+                            <img class="mana" src="mana/mana2.png">
+                            <p>魔盒看守者</p> <img class="cardImage"
+                                src="http://dd.b.pvp.net/3_21_0/set6cde/zh_tw/img/cards/06SI006-full.png">
+                        </div>
+                        <span class="cardAmount">X2</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="card_full_detial">
+                        <div class="cardDetial" style="background-color:#C0D322">
+                            <img class="mana" src="mana/mana3.png">
+                            <p>班德爾邪花</p> <img class="cardImage"
+                                src="http://dd.b.pvp.net/3_21_0/set6cde/zh_tw/img/cards/06BC028-full.png">
+                        </div>
+                        <span class="cardAmount">X3</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="card_full_detial">
+                        <div class="cardDetial" style="background-color:#BFB083">
+                            <img class="mana" src="mana/mana4.png">
+                            <p>叛逃遊騎兵</p> <img class="cardImage"
+                                src="http://dd.b.pvp.net/3_21_0/set6cde/zh_tw/img/cards/06DE010-full.png">
+                        </div>
+                        <span class="cardAmount">X3</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="card_full_detial">
+                        <div class="cardDetial" style="background-color:#E29F76">
+                            <img class="mana" src="mana/mana4.png">
+                            <p>野心勃勃邪教徒</p> <img class="cardImage"
+                                src="http://dd.b.pvp.net/3_21_0/set6cde/zh_tw/img/cards/06PZ007-full.png">
+                        </div>
+                        <span class="cardAmount">X1</span>
+                    </div>
+                </li>
+            </ul>
+            <ul>
+                <li class="type"><img src="./spells.png"></li>
+                <li>
+                    <div class="card_full_detial">
+                        <div class="cardDetial" style="background-color:#CF829B">
+                            <img class="mana" src="mana/mana1.png">
+                            <p>重大抉擇</p> <img class="cardImage"
+                                src="http://dd.b.pvp.net/3_21_0/set6cde/zh_tw/img/cards/06IO034-full.png">
+                        </div>
+                        <span class="cardAmount">X3</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="card_full_detial">
+                        <div class="cardDetial" style="background-color:#5AB8DA">
+                            <img class="mana" src="mana/mana4.png">
+                            <p>無情酷寒</p> <img class="cardImage"
+                                src="http://dd.b.pvp.net/3_21_0/set6cde/zh_tw/img/cards/06FR034-full.png">
+                        </div>
+                        <span class="cardAmount">X3</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="card_full_detial">
+                        <div class="cardDetial" style="background-color:#6DDBD6">
+                            <img class="mana" src="mana/mana4.png">
+                            <p>蒼穹庇護</p> <img class="cardImage"
+                                src="http://dd.b.pvp.net/3_21_0/set6cde/zh_tw/img/cards/06MT040-full.png">
+                        </div>
+                        <span class="cardAmount">X1</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="card_full_detial">
+                        <div class="cardDetial" style="background-color:#A0524F">
+                            <img class="mana" src="mana/mana4.png">
+                            <p>飆悍戰士</p> <img class="cardImage"
+                                src="http://dd.b.pvp.net/3_21_0/set6cde/zh_tw/img/cards/06NX034-full.png">
+                        </div>
+                        <span class="cardAmount">X3</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="card_full_detial">
+                        <div class="cardDetial" style="background-color:#E5A131">
+                            <img class="mana" src="mana/mana5.png">
+                            <p>強行復甦</p> <img class="cardImage"
+                                src="http://dd.b.pvp.net/3_21_0/set6cde/zh_tw/img/cards/06SH040-full.png">
+                        </div>
+                        <span class="cardAmount">X1</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>

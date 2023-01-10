@@ -1,0 +1,94 @@
+﻿* {
+    list-style: none;
+}
+
+.allOfCard {
+    display: flex;
+}
+
+.champion {
+    padding-top: 90px;
+}
+
+.championImg {
+    display: inline-block;
+    position: relative;
+}
+
+.champion ul li img {
+    width: 200px;
+    display: inline-block;
+    margin: 40px;
+    margin-left: 80px;
+}
+.deckCard{
+    padding-top: 130px;
+}
+.deckCard ul {
+    float: left;
+    height: 800px;
+}
+
+.type {
+    position: relative;
+    left: 20px;
+}
+
+/*卡片相關*/
+.card_full_detail {
+    position: relative;
+}
+
+.cardDetial {
+    width: 270px;
+    height: 60px;
+    display: inline-block;
+    box-shadow: 2px 2px 20px black;
+    margin: 10px 30px 10px 30px;
+    border-radius: 5%;
+    font-family: arial;
+    overflow: hidden;
+}
+
+.mana {
+    position: relative;
+    top: 15px;
+}
+
+.cardAmount {
+    position: relative;
+    font-size: 30px;
+    padding: 5px;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    bottom: 25px;
+    right: 50px;
+    border: 2px solid #F1943D;
+}
+
+.cardImage {
+    width: 50%;
+    position: relative;
+    left: 150px;
+    bottom: 70px;
+    -webkit-mask-image: linear-gradient(-90deg, #531717 0%, rgba(150, 139, 139, 0) 100%);
+    mask-image: linear-gradient(-90deg, #531717 0%, rgba(150, 139, 139, 0) 100%);
+}
+
+.cardDetial p {
+    position: relative;
+    left: 50px;
+    bottom: 20px;
+    font-size: 20px;
+    color: white;
+}
+
+.cardImage_o {
+    width: 50%;
+    position: relative;
+    left: 150px;
+    bottom: 100px;
+    -webkit-mask-image: linear-gradient(-90deg, #531717 0%, rgba(150, 139, 139, 0) 100%);
+    mask-image: linear-gradient(-90deg, #531717 0%, rgba(150, 139, 139, 0) 100%);
+}
